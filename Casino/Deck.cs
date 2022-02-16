@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlackJack
+namespace Casino
 {
     public class Deck // this is our class and inside of it we have an insturctor(method)
     {

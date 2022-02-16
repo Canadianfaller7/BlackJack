@@ -6,3 +6,14 @@ D:\GitHub\Basic-C-Sharp-Projects\BlackJack\BlackJack\obj\Debug\BlackJack.csproj.
 D:\GitHub\Basic-C-Sharp-Projects\BlackJack\BlackJack\obj\Debug\BlackJack.csproj.CoreCompileInputs.cache
 D:\GitHub\Basic-C-Sharp-Projects\BlackJack\BlackJack\obj\Debug\BlackJack.exe
 D:\GitHub\Basic-C-Sharp-Projects\BlackJack\BlackJack\obj\Debug\BlackJack.pdb
+D:\GitHub\BlackJack\BlackJack\bin\Debug\BlackJack.exe.config
+D:\GitHub\BlackJack\BlackJack\bin\Debug\BlackJack.exe
+D:\GitHub\BlackJack\BlackJack\bin\Debug\BlackJack.pdb
+D:\GitHub\BlackJack\BlackJack\obj\Debug\BlackJack.csproj.AssemblyReference.cache
+D:\GitHub\BlackJack\BlackJack\obj\Debug\BlackJack.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\BlackJack\BlackJack\obj\Debug\BlackJack.csproj.CoreCompileInputs.cache
+D:\GitHub\BlackJack\BlackJack\obj\Debug\BlackJack.exe
+D:\GitHub\BlackJack\BlackJack\obj\Debug\BlackJack.pdb
+D:\GitHub\BlackJack\BlackJack\bin\Debug\Casino.dll
+D:\GitHub\BlackJack\BlackJack\bin\Debug\Casino.pdb
+D:\GitHub\BlackJack\BlackJack\obj\Debug\BlackJack.csproj.CopyComplete

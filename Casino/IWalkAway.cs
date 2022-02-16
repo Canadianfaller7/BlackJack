@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlackJack
+namespace Casino
 {
     // all interfaces are public so no need to write public, interfaces are also like abstract classes where there are no implementation details
     interface IWalkAway // interfaces make it so other classes can inherit more than just one class and an interface always will start with an upper case I to let others know it is in interface

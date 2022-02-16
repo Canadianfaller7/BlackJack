@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using Casino;
+using Casino.BlackJack;
 
 namespace BlackJack
 {
@@ -10,7 +13,9 @@ namespace BlackJack
     {
         static void Main(string[] args) // this is our main method(function inside the class and when called will do the stuff we put inside it)
         {
-            Console.WriteLine("Welcome to BlackJack! Let's start by telling me your name.\n"); // welcoming someone to black jack and asking their name
+            
+
+            Console.WriteLine("Welcome to the Grand Hotel and Casino! Let's start by telling me your name.\n"); // welcoming someone to black jack and asking their name
             string playerName = Console.ReadLine(); // save user input to a var
             Console.WriteLine("\nHow much money did you bring today?\n"); // ask how much money they brought with them
             int bank = Convert.ToInt32(Console.ReadLine()); // save usr input to a int var
@@ -19,6 +24,11 @@ namespace BlackJack
             if (answer == "yes" || answer == "yeah" || answer == "ya" || answer == "sure" || answer == "y") // acceptable answers from user
             {
                 Player player = new Player(playerName, bank); // if user wants to play create a new Player with their name and how much money they have
+                player.Id = Guid.NewGuid();
+                using (StreamWriter file = new StreamWriter(@"D:\Logs\log.txt", true)) // this will save the cards dealt to us in a new file
+                {
+                    file.WriteLine(player.Id);
+                }
                 Game game = new BlackJackGame(); // start a new black jack game
                 game += player; // add the player to the game
                 player.isActivelyPlaying = true; // this is true if the player said they want to play

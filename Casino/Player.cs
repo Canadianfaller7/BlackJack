@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlackJack
+namespace Casino
 {
     public class Player
     {
+        public Player(string name) : this(name, 100)
+        {
+        }
         public Player(string name, int begginingBalance) // this is a constructor that takes a parameter of Name and begginingBalance
         {
             Hand = new List<Card>(); // create empty list card here and assign it to hand
@@ -20,8 +23,7 @@ namespace BlackJack
         public string Name { get; set; }
         public bool isActivelyPlaying { get; set; }
         public bool Stay { get; set; }
-
-
+        public Guid Id { get; set; }
         public bool Bet (int amount) // this is a bet method
         {
             if (Balance - amount < 0) // saying if the balance of the user - their bet amount is less than 0 then print the statement below

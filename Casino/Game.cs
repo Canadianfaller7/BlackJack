@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlackJack
+namespace Casino
 {
     // generic class for most card games we made this with these methods so we can use it for multiple games that can inherit the methods from this class
     public abstract class Game // abstract classes are here to lock our class because we will never make an instance of the class meaning it will never be made an object

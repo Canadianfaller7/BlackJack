@@ -1,0 +1,5 @@
+D:\GitHub\BlackJack\Casino\bin\Debug\Casino.dll
+D:\GitHub\BlackJack\Casino\bin\Debug\Casino.pdb
+D:\GitHub\BlackJack\Casino\obj\Debug\Casino.csproj.CoreCompileInputs.cache
+D:\GitHub\BlackJack\Casino\obj\Debug\Casino.dll
+D:\GitHub\BlackJack\Casino\obj\Debug\Casino.pdb
