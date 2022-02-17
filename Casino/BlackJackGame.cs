@@ -19,11 +19,25 @@ namespace Casino.BlackJack
             Dealer.Stay = false; // want this false too
             Dealer.Deck = new Deck(); // we then make a new deck again so the deck has all 52 cards always and will always be shuffled
             Dealer.Deck.Shuffle(); // here we shuffle the cards
-            Console.WriteLine("\nPlace your bet!\n"); // ask the user to place their bet
 
             foreach (Player player in Players) // we will now loop through the players again
             {
-                int bet = Convert.ToInt32(Console.ReadLine()); // save their amount they wanted to bet
+                // all this from bool to the if inside the while is to do an exception if the user adds string or decimal and to tell them to just add numbers
+                bool validAnswer = false; // set this to false to run error messages
+                int bet = 0;
+                while (!validAnswer) // while validAnswer is true
+                {
+                    Console.WriteLine("\nPlace your bet!\n"); // print this
+                    validAnswer = int.TryParse(Console.ReadLine(), out bet); // try running this code which will get users answer and try running it
+                    if (!validAnswer) // if user put a string or decimal in the code then print statement below else continue on with code
+                    {
+                        Console.WriteLine("\nPlease enter digits only, No decimals");
+                    }
+                    if (bet < 0)
+                    {
+                        throw new FraudException();
+                    }
+                }
                 bool succesfullyBet = player.Bet(bet); // we will then make sure that the amount the user bet is true with our succesfullyBet and it wasn't 0
                 if (!succesfullyBet) // if their bet is not sufficent then return to main page and ask the user to place their bet again
                 {
