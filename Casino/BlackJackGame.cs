@@ -35,7 +35,7 @@ namespace Casino.BlackJack
                     }
                     if (bet < 0)
                     {
-                        throw new FraudException();
+                        throw new FraudException("\nSecurity! This person is cheating. Kick them out!);
                     }
                 }
                 bool succesfullyBet = player.Bet(bet); // we will then make sure that the amount the user bet is true with our succesfullyBet and it wasn't 0
