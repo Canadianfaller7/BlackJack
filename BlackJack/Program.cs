@@ -93,8 +93,8 @@ namespace BlackJack
         private static void UpdateDBWithException(Exception ex)  // this is a private static method that will take a type exception called ex and the code inside is what we will use to log any exceptions made and update our db that we made
         {
             // ( this is ado.net) this is a connection string that contains info about the database instance we are trying to connect to, like usr name, password, location, where it is and how to access it. We always need a connection string to connect to a database in this manner
-            string connectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=BlackJackGame;Integrated Security=True;Connect Timeout=30;Encrypt=False;
-                                       TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BlackJackGame;Integrated Security=True;Connect 
+                                      Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             
             // to make a string read just as a straight string we add the @ symbole infront of the string, so like above we have a \ which is an escape key in C# so we use the @ to tell the system its an actual \ and not an escape key
             // this is a query string, our actual sql query we are writing
@@ -130,8 +130,8 @@ namespace BlackJack
         // this is our method to make our admin command work
         private static List<ExceptionEntity> ReadExceptions() // will return a list of exceptions entities and will call the database, query the db and get back all the exceptions and then display them
         {
-            string connectionString = @"Data Source=(localdb)\ProjectsV13;Initial Catalog=BlackJackGame;Integrated Security=True;Connect Timeout=30;Encrypt=False;
-                                       TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"; // getting connection string like above
+            string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BlackJackGame;Integrated Security=True;Connect 
+                                      Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"; // getting connection string like above
 
             string queryString = @"Select Id, ExceptionType, ExceptionMessage, TimeStamp From Exceptions"; // this is the query string and we are selecting all columns from our exceptions table
 
